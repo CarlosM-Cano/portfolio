@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<head>
+    <title>Packing Machine</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../statics/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../statics/css/noscript.css" /></noscript>
+</head>
+<body class="left-sidebar is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- Main -->
+        <article id="main">
+
+            <header class="special container">
+                <h2>Packing Machine</h2>
+                <p>Project at <strong>Toyo Kasei</strong></p>
+            </header>
+
+            <!-- One -->
+            <section class="wrapper style4 container">
+
+                <div class="row gtr-150">
+                    <div class="col-4 col-12-narrower">
+
+                        <!-- Sidebar -->
+                        <div class="sidebar">
+                            <section>
+                                <header>
+                                    <h3>Challenges</h3>
+                                </header>
+                                    <p>To address this, I collaborated with the head of the maintenance department to develop a machine that would automate the wrapping process and reduce manual lifting.
+                                    The design featured a rotary base with fixed Z-axis and rotating X/Y axes, allowing the irrigation roll to spin smoothly during wrapping.
+                                    A hydraulically actuated rubber roll applied calibrated pressure from above, ensuring the roll remained stable without being over-compressed.</p>
+                                <footer>
+                                <a href="#" class="image featured"><img src="../../images/projects/packing-machine/front-view.png" alt="" /></a>
+                                </footer>
+                            </section>
+
+                            <section>
+                                <header>
+                                    <h3>Test</h3>
+                                </header>
+                                <p>Based on operator feedback and comparative task analysis, the machine was projected to reduce physical effort by at least 50%, even without the scissor lift module.
+                                    The wrapping process was completed without requiring the operator to lift or reposition the roll manually, confirming the machine’s ergonomic impact and mechanical reliability.</p>
+                                <a href="#" class="image featured"><img src="../../images/projects/packing-machine/base-trimetric.png" alt="" /></a>
+                                <footer>
+                                </footer>
+                            </section>
+                        </div>
+
+                    </div>
+                    <div class="col-8 col-12-narrower imp-narrower">
+
+                        <!-- Content -->
+                        <div class="content">
+                            <section>
+                                <a href="#" class="image featured"><img src="../../images/projects/packing-machine/trimetric2.png" alt="" /></a>
+                                <header>
+                                    <h3>Early Steps</h3>
+                                </header>
+                                <p>While working at Toyo Kasei, I co-led the design of a semi-automated packing machine to reduce the physical strain on operators handling 20 kg irrigation tape rolls.
+                                    The traditional packing process required operators to manually lift the roll multiple times and wrap it with plastic film — a repetitive and physically demanding task.</p>
+                                <p>On the left side of the machine, a plastic film roll holder was positioned so the operator only needed to insert the film into the roll’s central hole and activate the machine.
+                                    The wrapping process was then handled automatically, rotating the roll via two rubber rollers powered by a servo motor and gear system. The gear ratio was carefully calculated to prevent unsafe rotational speeds while maintaining efficient wrapping.</p>
+                                <p>Although I left the company before the machine was fully completed, the structural design was finalized and near implementation. A second phase of the project was planned to include a scissor lift,
+                                    enabling operators to transfer the roll from the roller machine to the packing station with minimal effort. Even without the lift, the packing machine alone was projected to reduce physical strain by at least 50%.</p>
+                                <p>This project highlighted my ability to design for operator safety, mechanical efficiency, and collaborative development. It also reinforced the importance of integrating motion control, load dynamics, and ergonomic principles into industrial automation.</p>
+
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Carousel -->
+            <div id="carousel-placeholder"></div>
+
+
+            <!-- Footer -->
+            <div id="footer-placeholder"></div>
+        </article>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../statics/js/jquery.min.js"></script>
+    <script src="../../statics/js/jquery.dropotron.min.js"></script>
+    <script src="../../statics/js/jquery.scrolly.min.js"></script>
+    <script src="../../statics/js/jquery.scrollgress.min.js"></script>
+    <script src="../../statics/js/jquery.scrollex.min.js"></script>
+    <script src="../../statics/js/browser.min.js"></script>
+    <script src="../../statics/js/breakpoints.min.js"></script>
+    <script src="../../statics/js/util.js"></script>
+    <script src="../../statics/js/main.js"></script>
+    <!-- Header -->
+    <script src="../../statics/js/footer.js"></script>
+    <script>
+        function loadComponent(id, file, callback) {
+          fetch(file)
+            .then(res => res.text())
+            .then(html => {
+              document.getElementById(id).innerHTML = html;
+              if (callback) callback();
+            });
+        }
+
+        // Header
+        loadComponent("header-placeholder", "../modular/header.html", function() {
+          $('#nav > ul').dropotron({
+            offsetY: -15,
+            mode: 'fade',
+            noOpenerFade: true,
+            alignment: 'center'
+          });
+        });
+
+        // Footer
+        loadComponent("footer-placeholder", "../modular/footer.html", function() {
+          initFooterLinks(); // now works because it's in footer.js
+        });
+    </script>
+
+    <!-- Carousel -->
+
+    <script src="/statics/js/carousel.js"></script>
+    <script>
+        // Define image sets per project
+        const projectImages = [
+          "../../images/projects/packing-machine/trimetric-base.png",
+          "../../images/projects/packing-machine/base.png",
+          "../../images/projects/packing-machine/base-lateral-view.png",
+          "../../images/projects/packing-machine/trimetric1.png",
+          "../../images/projects/packing-machine/motor.png",
+        ];
+
+        // Load carousel.html and inject images
+        function loadComponent(id, file, callback) {
+          fetch(file)
+            .then(res => res.text())
+            .then(html => {
+              document.getElementById(id).innerHTML = html;
+              if (callback) callback();
+            });
+        }
+
+        loadComponent("carousel-placeholder", "../modular/carousel.html", function() {
+          const carousel = document.querySelector('.carousel');
+          initCarousel(carousel, projectImages);
+        });
+    </script>
+    <link rel="stylesheet" href="/statics/css/carousel.css">
+
+
+</body>

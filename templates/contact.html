@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<head>
+    <title>Contact - Twenty by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../statics/css/main.css" />
+    <noscript><link rel="stylesheet" href="../statics/css/noscript.css" /></noscript>
+</head>
+<body class="contact is-preload">
+    <div id="page-wrapper">
+
+			<!-- Header -->
+            <header id="header">
+                <h1 id="logo"><a href="../index.html#banner">Carlos Cano</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="submenu">
+                            <a href="#">Projects</a>
+                            <ul>
+                                <li><a href="projects/packing-machine.html">Packing Machine</a></li>
+                                <li><a href="projects/plastic-injection-mold.html">Plastic Injection</a></li>
+                                <li><a href="projects/scissor-lift.html">Scissor Lift</a></li>
+                                <li><a href="projects/transtibial-prosthetic.html">Transtibial Prosthetic</a></li>
+                                <li><a href="projects/water-pump.html">Water Pump</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../docs/mechanical-engineer-resume.pdf"><strong>Resume</strong></a></li>
+                    </ul>
+                </nav>
+            </header>
+        <!-- Main -->
+        <article id="contact">
+            <div>
+                <br>
+                <br>
+                <br>
+            </div>
+            <header class="special container">
+                <span class="icon solid fa-envelope"></span>
+                <br>
+                <h2>Get In Touch</h2>
+            </header>
+            <section class="wrapper style4 special container medium">
+
+                <!-- Content -->
+                <div class="content">
+                    <form id="contact-form" action="https://formspree.io/f/xldkbnwr" method="POST">
+                        <div class="row gtr-50">
+                            <div class="col-6 col-12-mobile">
+                                <label>
+                                    <input type="text" name="name" placeholder="Name" required />
+                                </label>
+                            </div>
+                            <div class="col-6 col-12-mobile">
+                                <label>
+                                    <input type="email" name="email" placeholder="Email" required />
+                                </label>
+                            </div>
+                            <div class="col-12">
+                                <label>
+                                    <input type="text" name="subject" placeholder="Subject" required />
+                                </label>
+                            </div>
+                            <div class="col-12">
+                                <label>
+                                    <textarea name="message" placeholder="Message" rows="7" required></textarea>
+                                </label>
+                            </div>
+
+                            <!-- Honeypot field -->
+                            <div style="display:none;">
+                                <label>
+                                    <input type="text" name="website" tabindex="-1" autocomplete="off" />
+                                </label>
+                            </div>
+
+                            <div class="col-12">
+                                <ul class="buttons">
+                                    <li><button type="submit" class="special">Send Message</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Feedback message -->
+                    <div id="form-status" style="margin-top:1em; font-weight:bold;"></div>
+
+                </div>
+            </section>
+        </article>
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../statics/js/jquery.min.js"></script>
+    <script src="../statics/js/jquery.dropotron.min.js"></script>
+    <script src="../statics/js/jquery.scrolly.min.js"></script>
+    <script src="../statics/js/jquery.scrollgress.min.js"></script>
+    <script src="../statics/js/jquery.scrollex.min.js"></script>
+    <script src="../statics/js/browser.min.js"></script>
+    <script src="../statics/js/breakpoints.min.js"></script>
+    <script src="../statics/js/util.js"></script>
+    <script src="../statics/js/main.js"></script>
+    <!-- Header -->
+    <script src="../statics/js/footer.js"></script>
+    <script>
+        function loadComponent(id, file, callback) {
+          fetch(file)
+            .then(res => res.text())
+            .then(html => {
+              document.getElementById(id).innerHTML = html;
+              if (callback) callback();
+            });
+        }
+
+
+        // Footer
+        loadComponent("footer-placeholder", "modular/footer.html", function() {
+          initFooterLinks(); // now works because it's in footer.js
+        });
+    </script>
+
+</body>

@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Plastic Injection Mold</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../statics/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../statics/css/noscript.css" /></noscript>
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+               <div id="header-placeholder"></div>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon solid fa-tablet-alt"></span>
+						<h2>Plastic<strong> Injection Mold</strong></h2>
+                        <p>Project in collaboration with <strong>PSI plastics.</strong></p>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 container">
+
+							<div class="row gtr-150">
+								<div class="col-8 col-12-narrower">
+
+									<!-- Content -->
+										<div class="content">
+											<section>
+												<a class="image featured"><img src="../../images/projects/flower-pot/modular-design.jpg" alt="" /></a>
+												<header>
+													<h3></h3>
+												</header>
+                                                <p>In my final semester of college (Jan 2023 - Jun 2023) I led a team of four in a collaborative project with <strong>PSI Plastics</strong>
+                                                    to design a self-watering flower pot optimized for plastic injection molding.</p>
+                                                <p>We began by modeling the flower pot and its mold in <strong>SolidWorks</strong>, carefully balancing aesthetics with manufacturability and functionality
+                                                    We determined the optimal draft angles to preserve the original design while minimizing risks during injection.
+                                                    PSI Plastics provided us with professional guidelines and tolerances, which we implemented to ensure material efficiency and mold reliability</p>
+                                                <p>Although budget and time constraints prevented full-scale mold fabrication, we produced a <strong>3D-printed prototype</strong> that replicated all critical features,
+                                                    including cavities, angles, and draft surfaces as if it were ready for injection. We also printed a physical flower pot to demonstrate fit and function.</p>
+                                                <p>The final prototype was presented to PSI Plastics, our faculty, and showcased at a university science exposition.
+                                                    PSI Plastics confirmed the mold was <strong>fully functional</strong> and could be manufactured if needed, this was a rewarding validation of our design and engineering process.</p>
+                                                <p>This project was a hands-on dive into <strong>CAD</strong> modeling, <strong>CAM</strong> programming, mold simulation, and industry collaboration.
+                                                    It taught me how to lead a team through technical challenges, apply real-world standards, and deliver a validated prototype under constraints.</p>
+                                            </section>
+										</div>
+
+								</div>
+								<div class="col-4 col-12-narrower">
+
+									<!-- Sidebar -->
+										<div class="sidebar">
+											<section>
+												<header>
+													<h3>Flower Pot Composition</h3>
+												</header>
+												<p>the challenge was to create a manufacturable product composed of two interlocking components: a base to hold the plant and a lower reservoir
+                                                    for passive hydration.</p>
+												<footer>
+												<a class="image featured"><img src="../../images/projects/flower-pot/fully-assembled-flower-pot.jpg" alt="" /></a>
+												</footer>
+											</section>
+
+											<section>
+												<header>
+													<h3>Simulations</h3>
+												</header>
+												<p>The injection mold fabrication was simulated through <strong>CAM</strong> in <strong>Fusion360</strong>.
+                                                    Also, thermal and flow analyses were performed in <strong>Altair</strong> and <strong>Ansys</strong>
+                                                    respectively to study plastic behavior during the injection proces.</p>
+												<footer>
+												<a class="image featured"><img src="../../images/projects/flower-pot/temperature-altair.png" alt="" /></a>
+												</footer>
+											</section>
+										</div>
+
+								</div>
+							</div>
+						</section>
+
+            <!-- Carousel -->
+            <div id="carousel-placeholder"></div>
+
+
+            <!-- Footer -->
+            <div id="footer-placeholder"></div>
+        </article>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../statics/js/jquery.min.js"></script>
+    <script src="../../statics/js/jquery.dropotron.min.js"></script>
+    <script src="../../statics/js/jquery.scrolly.min.js"></script>
+    <script src="../../statics/js/jquery.scrollgress.min.js"></script>
+    <script src="../../statics/js/jquery.scrollex.min.js"></script>
+    <script src="../../statics/js/browser.min.js"></script>
+    <script src="../../statics/js/breakpoints.min.js"></script>
+    <script src="../../statics/js/util.js"></script>
+    <script src="../../statics/js/main.js"></script>
+    <!-- Header -->
+    <script src="../../statics/js/footer.js"></script>
+    <script>
+        function loadComponent(id, file, callback) {
+          fetch(file)
+            .then(res => res.text())
+            .then(html => {
+              document.getElementById(id).innerHTML = html;
+              if (callback) callback();
+            });
+        }
+
+        // Header
+        loadComponent("header-placeholder", "../modular/header.html", function() {
+          $('#nav > ul').dropotron({
+            offsetY: -15,
+            mode: 'fade',
+            noOpenerFade: true,
+            alignment: 'center'
+          });
+        });
+
+        // Footer
+        loadComponent("footer-placeholder", "../modular/footer.html", function() {
+          initFooterLinks(); // now works because it's in footer.js
+        });
+    </script>
+
+    <!-- Carousel -->
+
+    <script src="/statics/js/carousel.js"></script>
+    <script>
+        // Define image sets per project
+        const projectImages = [
+          "../../images/projects/flower-pot/explosioned-view.jpg",
+          "../../images/projects/flower-pot/fully-assembled-mold.jpg",
+          "../../images/projects/flower-pot/assembled-mold.jpg",
+          "../../images/projects/flower-pot/perspective-injection-mold.jpg",
+          "../../images/projects/flower-pot/simulation-injection-mold.jpg",
+          "../../images/projects/flower-pot/ejection-flower-pot.jpg",
+          "../../images/projects/flower-pot/core.png",
+          "../../images/projects/flower-pot/filling-time-ansys.png",
+          "../../images/projects/flower-pot/cooling-time-altair.png",
+          "../../images/projects/flower-pot/flower-pot-dimensions.png",
+          "../../images/projects/flower-pot/reservoir.png",
+        ];
+
+        // Load carousel.html and inject images
+        function loadComponent(id, file, callback) {
+          fetch(file)
+            .then(res => res.text())
+            .then(html => {
+              document.getElementById(id).innerHTML = html;
+              if (callback) callback();
+            });
+        }
+
+        loadComponent("carousel-placeholder", "../modular/carousel.html", function() {
+          const carousel = document.querySelector('.carousel');
+          initCarousel(carousel, projectImages);
+        });
+    </script>
+    <link rel="stylesheet" href="/statics/css/carousel.css">
+
+
+</body>

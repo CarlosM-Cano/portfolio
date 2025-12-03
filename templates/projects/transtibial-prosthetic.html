@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<head>
+    <title>Transtibial Prosthetic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../statics/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../statics/css/noscript.css" /></noscript>
+</head>
+<body class="right-sidebar is-preload">
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main -->
+    <article id="main">
+
+        <header class="special container">
+            <span class="icon solid fa-tablet-alt"></span>
+            <h2>Transtibial Prosthetic</h2>
+            <p>A college project</p>
+        </header>
+
+        <!-- One -->
+        <section class="wrapper style4 container">
+
+            <div class="row gtr-150">
+                <div class="col-8 col-12-narrower">
+
+                    <!-- Content -->
+                    <div class="content">
+                        <section>
+                            <a href="#" class="image featured"><img src="../../images/projects/transtibial-prosthetic/catia-cad.jpg" alt="" /></a>
+                            <header>
+                                <h3>Early Steps</h3>
+                            </header>
+                            <p>During my academic exchange at Public University of Navarre (UPNA), I worked on the design and prototyping of a transtibial prosthetic aimed at improving accessibility and comfort for users with below‑the‑knee limb loss.
+                            <p>The design process began with a clear set of goals: the prosthetic had to be ergonomic, customizable, and economical. To achieve adaptability, we integrated 3D scanning technology to capture the geometry of each user’s residual limb.
+                                This allowed us to generate a socket and structural design tailored to individual anatomy, moving away from fixed, one‑size‑fits‑all solutions.</p>
+                            <p>The first prototype was 3D printed in PLA, chosen for its low cost, ease of fabrication, and ecological properties. However, the long term design envisioned a combination of TPU and ABS, materials selected for their balance of flexibility, durability, and impact resistance.
+                                This hybrid approach would allow the prosthetic to absorb shock, conform to movement, and withstand daily wear. Future iterations also considered advanced materials such as carbon fiber for the socket, titanium alloys for the foot, and stainless steel for structural elements, ensuring both strength and longevity.</p>
+                            <p>We delivered both a physical prototype and a presentation to a board of professors at UPNA, demonstrating the design process, material selection, and biomechanical considerations. The prototype highlighted how additive manufacturing could reduce costs dramatically,
+                                from an estimated €1,500 for a commercial prosthetic to just €22 for our prototype, representing a 98.5% cost reduction. Fabrication time was approximately 30 hours, making it feasible for rapid deployment in resource‑limited settings.</p>
+                            <p>This project was a hands-on exploration of biomechanics, digital fabrication, and human‑centered design. It taught me how to merge engineering rigor with empathy, delivering a solution that could adapt to each user’s needs while remaining accessible and affordable.</p>
+                        </section>
+                    </div>
+
+                </div>
+                <div class="col-4 col-12-narrower">
+
+                    <!-- Sidebar -->
+                    <div class="sidebar">
+                        <section>
+                            <header>
+                                <h3>Challenge</h3>
+                            </header>
+                            <p>The challenge was to create a prosthetic that was lightweight, affordable, and adaptable, while simulating the natural movement of a leg.</p>
+                            <footer>
+                                <a href="#" class="image featured"><img src="../../images/projects/transtibial-prosthetic/fit-tests.JPG" alt="" /></a>
+                            </footer>
+                        </section>
+
+                        <section>
+                            <header>
+                                <h3>Amet Lorem Tempus</h3>
+                            </header>
+                            <p>To validate the prototype, I conducted a series of basic physical stress tests. The transtibial prosthetic was subjected to incremental loading
+                                and successfully supported up to 80 kg (176 lb) without structural failure. While the test was informal and not instrumented, it provided confidence in the prototype’s strength and demonstrated that the design could withstand typical user loads.</p>
+                            <a href="#" class="image featured"><img src="../../images/projects/transtibial-prosthetic/base-tests.JPG" alt="" /></a>
+                            <p>Future iterations would benefit from more controlled testing with standardized equipment to measure fatigue resistance, long-term durability, and material performance under dynamic conditions.</p>
+                            <footer>
+                            </footer>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel -->
+        <div id="carousel-placeholder"></div>
+
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+    </article>
+
+</div>
+
+<!-- Scripts -->
+<script src="../../statics/js/jquery.min.js"></script>
+<script src="../../statics/js/jquery.dropotron.min.js"></script>
+<script src="../../statics/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollgress.min.js"></script>
+<script src="../../statics/js/jquery.scrollex.min.js"></script>
+<script src="../../statics/js/browser.min.js"></script>
+<script src="../../statics/js/breakpoints.min.js"></script>
+<script src="../../statics/js/util.js"></script>
+<script src="../../statics/js/main.js"></script>
+<!-- Header -->
+<script src="../../statics/js/footer.js"></script>
+<script>
+    function loadComponent(id, file, callback) {
+      fetch(file)
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById(id).innerHTML = html;
+          if (callback) callback();
+        });
+    }
+
+    // Header
+    loadComponent("header-placeholder", "../modular/header.html", function() {
+      $('#nav > ul').dropotron({
+        offsetY: -15,
+        mode: 'fade',
+        noOpenerFade: true,
+        alignment: 'center'
+      });
+    });
+
+    // Footer
+    loadComponent("footer-placeholder", "../modular/footer.html", function() {
+      initFooterLinks(); // now works because it's in footer.js
+    });
+</script>
+
+<!-- Carousel -->
+
+<script src="/statics/js/carousel.js"></script>
+<script>
+    // Define image sets per project
+    const projectImages = [
+      "../../images/projects/transtibial-prosthetic/v2.jpg",
+      "../../images/projects/transtibial-prosthetic/sketch.png",
+      "../../images/projects/transtibial-prosthetic/final-assembly.png",
+      "../../images/projects/transtibial-prosthetic/foot-v1.jpg",
+      "../../images/projects/transtibial-prosthetic/leg-v1.jpg",
+      "../../images/projects/transtibial-prosthetic/foot-v1.jpg",
+    ];
+
+    // Load carousel.html and inject images
+    function loadComponent(id, file, callback) {
+      fetch(file)
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById(id).innerHTML = html;
+          if (callback) callback();
+        });
+    }
+
+    loadComponent("carousel-placeholder", "../modular/carousel.html", function() {
+      const carousel = document.querySelector('.carousel');
+      initCarousel(carousel, projectImages);
+    });
+</script>
+<link rel="stylesheet" href="/statics/css/carousel.css">
+
+
+</body>
