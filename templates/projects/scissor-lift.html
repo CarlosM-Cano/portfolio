@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<head>
+    <title>Scissor Lift</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../statics/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../statics/css/noscript.css" /></noscript>
+</head>
+<body class="left-sidebar is-preload">
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main -->
+    <article id="main">
+
+        <header class="special container">
+            <span class="icon solid fa-laptop"></span>
+            <h2>Scissor Lift</h2>
+            <p>Project in collaboration with <strong>MIKEL'S</strong>.</p>
+        </header>
+
+        <!-- One -->
+        <section class="wrapper style4 container">
+
+            <div class="row gtr-150">
+                <div class="col-4 col-12-narrower">
+
+                    <!-- Sidebar -->
+                    <div class="sidebar">
+                        <section>
+                            <header>
+                                <h3>Overview</h3>
+                            </header>
+                            <p>A manually operated scissor lift designed to triple its original height and support a 155 lb load, developed under strict constraints during a collaboration with MIKEL’S.
+                                I led the mechanical design, focusing on manufacturability, structural integrity, and safe manual operation.</p>
+                            <p><strong>Impact:</strong> Delivered a complete digital prototype, manufacturing drawings, and validated FEA results despite pandemic restrictions preventing physical fabrication.</p>
+                            <footer>
+                            <a class="image featured"><img src="../../images/projects/scissor-lift/sketch.jpg" alt="" /></a>
+                            </footer>
+                        </section>
+
+                        <section>
+                            <header>
+                                <h3>Tools & Methods</h3>
+                            </header>
+                            <p>- SolidWorks (CAD, assemblies, FEA)
+                            <br>- Analytical calculations (mechanics of materials, screw mechanics)
+                            <br>- QFD and morphological analysis
+                            <br>- Manufacturing process planning</p>
+                            <footer>
+                            <a class="image featured"><img src="../../images/projects/scissor-lift/fea1.jpg" alt="" /></a>
+                            </footer>
+                        </section>
+                    </div>
+
+                </div>
+                <div class="col-8 col-12-narrower imp-narrower">
+
+                    <!-- Content -->
+                    <div class="content">
+                        <section>
+                            <a href="#" class="image featured"><img src="../../images/projects/scissor-lift/compressed-2.JPG" alt="" /></a>
+                            <header>
+                                <h3>Challenge</h3>
+                            </header>
+                            <p>The objective was to design a manually operated scissor lift capable of tripling its original height while supporting a 155 lb load, all within a compact 8.5" × 11" footprint.
+                                The customer required the lift to be built primarily from aluminum, avoid welded joints, and maintain a safety factor of 1.5 across all components. These constraints,
+                                combined with the need for low‑cost manufacturing and reliable manual operation, created a demanding design environment that required careful consideration of mechanism selection,
+                                structural integrity, and manufacturability.</p>
+                        </section>
+                        <section>
+                            <header>
+                                <h3>Solution</h3>
+                            </header>
+                            <p>To address these requirements, I developed a scissor lift mechanism actuated by a power screw, replacing an initial hydraulic concept to improve manufacturability and reduce complexity.
+                                The design incorporated aluminum scissor arms sized for stiffness, a guided slider system to maintain alignment, and bolted joints that eliminated the need for welding.
+                                The geometry was optimized to achieve the required elevation ratio while ensuring smooth and controlled manual lifting.
+                                The final assembly was modeled in SolidWorks, capturing all structural components, interfaces, and motion constraints.</p>
+                        </section>
+                        <section>
+                            <header>
+                                <h3>Engineering Process</h3>
+                            </header>
+                            <p>The design process began with conceptual exploration using a morphological matrix and QFD analysis to prioritize load capacity, manufacturability, and stability.
+                                I performed analytical calculations to size the power screw, determine torque requirements, and evaluate bar thickness and bolt diameters.</p>
+                            <p>The full assembly was then modeled in SolidWorks, where I conducted FEA simulations to validate structural integrity, assess von Mises stresses, and confirm that the safety factor exceeded 1.5 under load.
+                                I also developed manufacturing drawings and process plans detailing machining operations such as drilling, threading, turning, and milling.</p>
+                            <p>Although pandemic restrictions prevented physical fabrication, the digital prototype and documentation were completed to production‑ready standards.</p>
+                        </section>
+                        <section>
+                            <header>
+                                <h3>Results</h3>
+                            </header>
+                            <p>The final design met all customer requirements, supporting 155 lb with a verified safety factor of 1.5 and achieving the required height extension within the specified footprint.
+                                The project demonstrated a complete engineering workflow from customer requirements and conceptual design to CAD modeling, analytical calculations, FEA validation,
+                                and manufacturing planning. The work was presented to both academic faculty and the company’s management, receiving strong evaluations for its technical rigor and manufacturability.</p>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel -->
+        <div id="carousel-placeholder"></div>
+
+
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+    </article>
+
+</div>
+
+<!-- Scripts -->
+<script src="../../statics/js/jquery.min.js"></script>
+<script src="../../statics/js/jquery.dropotron.min.js"></script>
+<script src="../../statics/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollgress.min.js"></script>
+<script src="../../statics/js/jquery.scrollex.min.js"></script>
+<script src="../../statics/js/browser.min.js"></script>
+<script src="../../statics/js/breakpoints.min.js"></script>
+<script src="../../statics/js/util.js"></script>
+<script src="../../statics/js/main.js"></script>
+<!-- Header -->
+<script src="../../statics/js/footer.js"></script>
+<script>
+    function loadComponent(id, file, callback) {
+      fetch(file)
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById(id).innerHTML = html;
+          if (callback) callback();
+        });
+    }
+
+    // Header
+    loadComponent("header-placeholder", "../modular/header.html", function() {
+      $('#nav > ul').dropotron({
+        offsetY: -15,
+        mode: 'fade',
+        noOpenerFade: true,
+        alignment: 'center'
+      });
+    });
+
+    // Footer
+    loadComponent("footer-placeholder", "../modular/footer.html", function() {
+      initFooterLinks(); // now works because it's in footer.js
+    });
+</script>
+
+<!-- Carousel -->
+
+<script src="/statics/js/carousel.js"></script>
+<script>
+    // Define image sets per project
+    const projectImages = [
+      "../../images/projects/scissor-lift/extended-2.jpg",
+      "../../images/projects/scissor-lift/compressed-2.jpg",
+      "../../images/projects/scissor-lift/top-section.jpg",
+      "../../images/projects/scissor-lift/extended-2.jpg",
+      "../../images/projects/scissor-lift/compressed-2.jpg",
+      "../../images/projects/scissor-lift/top-section.jpg",
+      "../../images/projects/scissor-lift/lateral-section.jpg",
+      "../../images/projects/scissor-lift/bottom-section.jpg",
+      "../../images/projects/scissor-lift/lateral-view.jpg",
+      "../../images/projects/scissor-lift/bottom-view.jpg",
+      "../../images/projects/scissor-lift/fea2.jpg",
+      "../../images/projects/scissor-lift/fea3.jpg",
+      "../../images/projects/scissor-lift/assembly-sheet.jpg",
+    ];
+
+    // Load carousel.html and inject images
+    function loadComponent(id, file, callback) {
+      fetch(file)
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById(id).innerHTML = html;
+          if (callback) callback();
+        });
+    }
+
+    loadComponent("carousel-placeholder", "../modular/carousel.html", function() {
+      const carousel = document.querySelector('.carousel');
+      initCarousel(carousel, projectImages);
+    });
+</script>
+<link rel="stylesheet" href="/statics/css/carousel.css">
+
+
+</body>

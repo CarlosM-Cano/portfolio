@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<head>
+    <title>Packing Machine</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../statics/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../statics/css/noscript.css" /></noscript>
+</head>
+<body class="left-sidebar is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+
+        <!-- Main -->
+        <article id="main">
+
+            <header class="special container">
+                <h2>Packing Machine</h2>
+                <p>Project at <strong>Toyo Kasei</strong></p>
+            </header>
+
+            <!-- One -->
+            <section class="wrapper style4 container">
+
+                <div class="row gtr-150">
+                    <div class="col-4 col-12-narrower">
+
+                        <!-- Sidebar -->
+                        <div class="sidebar">
+                            <section>
+                                <header>
+                                    <h3>Overview</h3>
+                                </header>
+                                    <p>A semi-automated packing machine designed to reduce operator strain and improve throughput in the handling of 45 lb irrigation tape rolls.
+                                        I co-led the mechanical design, focusing on ergonomics, motion control, and manufacturability. The system was engineered to automate the wrapping process while eliminating repetitive lifting.</p>
+                                        <p><strong>Impact:</strong> Reduced operator physical effort by 50%, improved safety, and prepared the design for industrial implementation.</p>
+                                <footer>
+                                <a href="#" class="image featured"><img src="../../images/projects/packing-machine/front-view.png" alt="" /></a>
+                                </footer>
+                            </section>
+
+                            <section>
+                                <header>
+                                    <h3>Tools & Methods</h3>
+                                </header>
+                                <p>- SolidWorks (CAD, assemblies, motion analysis)
+                                    <br>- Gear ratio calculations
+                                    <br>- Ergonomic task analysis
+                                    <br>- Hydraulic system design
+                                    <br>- Manufacturing feasibility review
+                                </p>
+                                <a href="#" class="image featured"><img src="../../images/projects/packing-machine/base-trimetric.png" alt="" /></a>
+                                <footer>
+                                </footer>
+                            </section>
+                        </div>
+
+                    </div>
+                    <div class="col-8 col-12-narrower imp-narrower">
+
+                        <!-- Content -->
+                        <div class="content">
+                            <section>
+                                <a href="#" class="image featured"><img src="../../images/projects/packing-machine/trimetric2.png" alt="" /></a>
+                                <header>
+                                    <h3>Challenge</h3>
+                                </header>
+
+                                <p>The packing process for 20 kg irrigation rolls required operators to repeatedly lift, rotate, and manually wrap each roll,
+                                    creating a high‑risk environment for ergonomic injuries and significantly slowing production. The repetitive lifting and awkward postures led to fatigue,
+                                    inconsistent wrapping quality, and low throughput during peak demand.
+                                    The challenge was to design a system that automated the wrapping process, minimized manual handling, and ensured safe, repeatable operation without increasing operational complexity.</p>
+
+                            </section>
+                            <section>
+                                <header>
+                                    <h3>Solution</h3>
+                                </header>
+
+                                <p>To address this problem, I developed a semi-automated packing machine that eliminated the need for operators to lift or reposition the roll.
+                                    The system incorporated a rotary base with a fixed Z‑axis and rotating X/Y axes to allow smooth and controlled rotation of the product.
+                                    A pair of servo‑driven rubber rollers provided consistent rotational speed, while a hydraulically actuated upper roller applied calibrated pressure to stabilize the roll without deforming it.
+                                    The film‑feeding mechanism was designed so the operator only needed to insert the film and activate the machine,
+                                    enabling a nearly hands‑free wrapping process that significantly reduced physical strain.</p>
+                            </section>
+                            <section>
+                                <header>
+                                    <h3>Engineering Process</h3>
+                                </header>
+
+                                <p>The design process began with a full CAD model of the machine in SolidWorks, including the frame, rollers, hydraulic components, and servo‑driven mechanisms.
+                                    I performed motion analysis to determine safe and efficient rotational speeds, calculating gear ratios that balanced torque, speed, and operator safety.
+                                    Ergonomic task analysis and operator feedback guided the placement of controls and the reduction of manual handling steps.
+                                    Structural components were sized for stiffness and manufacturability, and safety considerations such as guarding and pinch‑point mitigation were integrated into the design.
+                                    Although I left the company before fabrication, the structural design and mechanical architecture were fully completed and prepared for industrial implementation.</p>
+                            </section>
+                            <section>
+                                <header>
+                                    <h3>Results</h3>
+                                </header>
+
+                                <p>The final design reduced operator physical effort by approximately 50%, eliminated the need for repetitive lifting,
+                                    and produced consistent wrapping quality through servo‑controlled rotation. The system improved workplace safety by minimizing manual handling and applying controlled pressure during operation.
+                                    The machine’s design was ready for deployment, and a second phase—planned to include a scissor lift for full automation—was already outlined. Overall,
+                                    the project demonstrated a strong combination of ergonomic improvement, mechanical design, and industrial feasibility.</p>
+                            </section>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Carousel -->
+            <div id="carousel-placeholder"></div>
+
+
+            <!-- Footer -->
+            <div id="footer-placeholder"></div>
+        </article>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../statics/js/jquery.min.js"></script>
+    <script src="../../statics/js/jquery.dropotron.min.js"></script>
+    <script src="../../statics/js/jquery.scrolly.min.js"></script>
+    <script src="../../statics/js/jquery.scrollgress.min.js"></script>
+    <script src="../../statics/js/jquery.scrollex.min.js"></script>
+    <script src="../../statics/js/browser.min.js"></script>
+    <script src="../../statics/js/breakpoints.min.js"></script>
+    <script src="../../statics/js/util.js"></script>
+    <script src="../../statics/js/main.js"></script>
+    <!-- Header -->
+    <script src="../../statics/js/footer.js"></script>
+    <script>
+        function loadComponent(id, file, callback) {
+          fetch(file)
+            .then(res => res.text())
+            .then(html => {
+              document.getElementById(id).innerHTML = html;
+              if (callback) callback();
+            });
+        }
+
+        // Header
+        loadComponent("header-placeholder", "../modular/header.html", function() {
+          $('#nav > ul').dropotron({
+            offsetY: -15,
+            mode: 'fade',
+            noOpenerFade: true,
+            alignment: 'center'
+          });
+        });
+
+        // Footer
+        loadComponent("footer-placeholder", "../modular/footer.html", function() {
+          initFooterLinks(); // now works because it's in footer.js
+        });
+    </script>
+
+    <!-- Carousel -->
+
+    <script src="/statics/js/carousel.js"></script>
+    <script>
+        // Define image sets per project
+        const projectImages = [
+          "../../images/projects/packing-machine/trimetric-base.png",
+          "../../images/projects/packing-machine/base.png",
+          "../../images/projects/packing-machine/base-lateral-view.png",
+          "../../images/projects/packing-machine/trimetric1.png",
+          "../../images/projects/packing-machine/motor.png",
+        ];
+
+        // Load carousel.html and inject images
+        function loadComponent(id, file, callback) {
+          fetch(file)
+            .then(res => res.text())
+            .then(html => {
+              document.getElementById(id).innerHTML = html;
+              if (callback) callback();
+            });
+        }
+
+        loadComponent("carousel-placeholder", "../modular/carousel.html", function() {
+          const carousel = document.querySelector('.carousel');
+          initCarousel(carousel, projectImages);
+        });
+    </script>
+    <link rel="stylesheet" href="/statics/css/carousel.css">
+
+
+</body>

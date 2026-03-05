@@ -1,0 +1,54 @@
+.project-gallery {
+  margin: 1em auto;
+  max-width: 80%; /* match wrapper style4 container width */
+  position: relative;
+  text-align: center;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  list-style: none;   /* remove default bullets */
+  margin: 0;          /* reset margin */
+  padding: 0;         /* reset padding */
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 33.333%; /* 3 slides visible at once */
+}
+
+.carousel-slide img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-btn {
+  background: rgba(63, 177, 163, 0.8); /* theme color */
+  border: none;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 0.3em 2em;
+  border-radius: 4px;
+  min-width: 40px;
+  height: auto;
+  line-height: 1;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+  width: 100%;
+}

@@ -1,0 +1,34 @@
+<footer id="footer">
+  <ul class="icons">
+    <li>
+      <a id="linkedin-link" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+    </li>
+    <li>
+      <a id="email-link" class="icon solid fa-envelope"><span class="label">mail</span></a>
+    </li>
+    <li>
+      <a id="github-link" class="icon brands fa-github"><span class="label">Github</span></a>
+    </li>
+    <li>
+      <a id="phone-link" class="icon solid fa-mobile"><span class="label">Phone</span></a>
+    </li>
+  </ul>
+
+  <script>
+    // Obfuscation logic
+    const base = "https://www.linkedin.com/in/";
+    const profile = "carlosmcano/";
+    document.getElementById("linkedin-link").href = base + profile;
+
+    const user = "carlosmcano99";
+    const domain = "gmail.com";
+    document.getElementById("email-link").href = "mailto:" + user + "@" + domain;
+
+    const ghBase = "https://github.com/";
+    const ghUser = "CarlosM-Cano";
+    document.getElementById("github-link").href = ghBase + ghUser;
+
+    const phone = "9144519475";
+    document.getElementById("phone-link").href = "tel:" + phone;
+  </script>
+</footer>
